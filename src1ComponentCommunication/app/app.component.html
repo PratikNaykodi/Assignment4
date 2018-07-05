@@ -1,0 +1,12 @@
+<div style="text-align:center">
+  <h1>
+   Component Communication
+   </h1> <!-- Send data to child component-->
+    <!-- recived event from child component-->
+    <app-child-component (MyEvent)="message= $event" [parentData]="Message"></app-child-component>
+ 
+
+
+<!-- Display the message received from child-->
+<h2>{{message}}</h2> 
+</div>
